@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulai Gratis - Codepolitan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#14a7a0',
+                        secondary: '#f76b8a',
+                        dark: '#1e293b',
+                        light: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar for Slider */
+        .snap-x::-webkit-scrollbar {
+            display: none;
+        }
+        .snap-x {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] font-sans text-slate-800 antialiased">
+<nav class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <span class="text-2xl font-bold tracking-tighter text-slate-900">CODEPOLITAN</span>
+                </div>
+                <div class="hidden md:ml-10 md:flex md:space-x-8">
+                    <a href="#" class="text-slate-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Kelas</a>
+                    <a href="#" class="text-slate-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Bootcamp</a>
+                    <a href="#" class="text-slate-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Event</a>
+                    <a href="#" class="text-slate-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Blog</a>
+                    <a href="#" class="text-primary border-b-2 border-primary px-1 py-2 text-sm font-semibold">Mulai Gratis</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-slate-600 hover:text-primary text-sm font-medium hidden sm:block">Masuk</a>
+                <a href="#" class="bg-primary hover:bg-[#118f89] text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors shadow-sm">Daftar</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <div class="relative group">
+        <div class="flex overflow-x-auto snap-x snap-mandatory space-x-4 pb-4 rounded-xl">
+            
+            <div class="snap-center flex-shrink-0 w-full md:w-[85%] lg:w-[80%] bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden relative flex flex-col md:flex-row h-auto">
+                <div class="p-10 md:p-12 md:w-3/5 flex flex-col justify-center z-10">
+                    <span class="text-secondary font-bold text-xs uppercase tracking-wider mb-2">Akses Terbatas</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-3 leading-tight">Belajar Coding Gratis. <br><span class="text-primary">Tanpa Alasan.</span></h2>
+                    <p class="text-slate-500 mb-6 text-sm md:text-base">Akses puluhan kelas gratis dari mentor industri. Mulai sekarang, tanpa bayar sepeserpun.</p>
+                    <div>
+                        <button class="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-[#118f89] transition shadow-lg shadow-primary/30">Mulai Belajar Gratis</button>
+                    </div>
+                </div>
+                <div class="md:w-2/5 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply" alt="Coding">
+                </div>
+            </div>
+
+            <div class="snap-center flex-shrink-0 w-full md:w-[85%] lg:w-[80%] bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden relative flex flex-col md:flex-row h-auto">
+                <div class="p-10 md:p-12 md:w-3/5 flex flex-col justify-center z-10">
+                    <span class="text-secondary font-bold text-xs uppercase tracking-wider mb-2">Skill Up</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-3 leading-tight">Upgrade Skill. <br><span class="text-primary">0 Rupiah.</span></h2>
+                    <p class="text-slate-500 mb-6 text-sm md:text-base">Frontend, Cyber Security, AI, DevOps — semua materi dasar tersedia gratis untukmu.</p>
+                    <div>
+                        <button class="bg-slate-900 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-slate-800 transition">Lihat Katalog</button>
+                    </div>
+                </div>
+                <div class="md:w-2/5 bg-gradient-to-br from-emerald-50 to-teal-50 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply" alt="Meeting">
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="flex justify-center mt-2 space-x-2">
+            <span class="block w-2 h-2 bg-primary rounded-full"></span>
+            <span class="block w-2 h-2 bg-gray-300 rounded-full"></span>
+            <span class="block w-2 h-2 bg-gray-300 rounded-full"></span>
+        </div>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-16">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 text-center">
+        <h1 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Temukan 100+ Kelas Gratis untuk Karier Tech Kamu</h1>
+        
+        <div class="max-w-4xl mx-auto bg-gray-50 p-2 rounded-xl border border-gray-200 flex flex-col md:flex-row gap-2">
+            <div class="relative md:w-1/4">
+                <select class="w-full h-12 pl-4 pr-8 bg-white border border-gray-200 rounded-lg text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary/50 appearance-none cursor-pointer text-sm font-medium">
+                    <option>Semua Kategori</option>
+                    <option>Programming</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Cyber Security</option>
+                    <option>Artificial Intelligence</option>
+                    <option>DevOps</option>
+                    <option>Data Science</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-gray-500">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+            </div>
+
+            <div class="flex-1 relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+                <input type="text" class="w-full h-12 pl-10 pr-4 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 text-slate-700 placeholder-gray-400 text-sm" placeholder="Apa yang ingin kamu pelajari? (Contoh: Python, React, Laravel)">
+            </div>
+
+            <button class="md:w-auto bg-primary hover:bg-[#118f89] text-white font-semibold h-12 px-8 rounded-lg transition shadow-md">
+                Cari Kelas
+            </button>
+        </div>
+        
+        <div class="mt-4 flex flex-wrap justify-center gap-2 text-xs text-slate-500">
+            <span>Trending:</span>
+            <span class="bg-gray-100 px-2 py-1 rounded-md cursor-pointer hover:bg-gray-200">Python Dasar</span>
+            <span class="bg-gray-100 px-2 py-1 rounded-md cursor-pointer hover:bg-gray-200">HTML CSS</span>
+            <span class="bg-gray-100 px-2 py-1 rounded-md cursor-pointer hover:bg-gray-200">Cyber Security</span>
+        </div>
+    </div>
+</div>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+    <div class="flex justify-between items-end mb-6">
+        <h2 class="text-2xl font-bold text-slate-900">Kelas Gratis Populer</h2>
+        <a href="#" class="text-primary font-semibold text-sm hover:underline">Lihat Semua Kelas →</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">Programming</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Sandhika+Galih&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Sandhika Galih</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">Belajar Dasar Pemrograman Web</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.8</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(1.2k)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Pemula</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">Frontend</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Eko+Kurniawan&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Eko Kurniawan</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">ReactJS untuk Pemula: Modern Web</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.9</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(850)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Menengah</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">Cyber Security</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Teguh+Aprianto&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Teguh Aprianto</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">Pengenalan Cyber Security & Etika</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.7</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(2.1k)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Pemula</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">DevOps</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Onno+W+Purbo&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Onno W. Purbo</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">Linux Server Administration Basic</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.9</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(3k)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Pemula</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">AI</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Romzi&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Romzi Imron</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">Dasar Artificial Intelligence & Python</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.6</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(500)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Pemula</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97663?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">Backend</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Pukis&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Hilman Ramadhan</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">Membuat REST API dengan Laravel</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.8</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(920)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Menengah</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+         <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">Mobile</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Wendi&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Wendi Kardian</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">Flutter Basics: Layouting UI</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.8</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(1.5k)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Pemula</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">Data</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=Budi&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Budi Raharjo</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">SQL untuk Analisis Data Dasar</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.9</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(2.3k)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Pemula</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full overflow-hidden group">
+            <div class="relative h-40 bg-gray-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-bold px-2 py-1 rounded text-slate-700">Soft Skill</span>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <div class="flex items-center mb-2">
+                    <img src="https://ui-avatars.com/api/?name=HR&background=random" class="w-6 h-6 rounded-full mr-2" alt="Mentor">
+                    <span class="text-xs text-slate-500">Team HR Tech</span>
+                </div>
+                <h3 class="font-bold text-slate-800 text-lg mb-2 leading-snug">Menyiapkan CV & Portfolio IT</h3>
+                <div class="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-1 text-yellow-400 text-xs font-bold">
+                        <span>4.9</span>
+                        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        <span class="text-slate-400 font-normal">(4.1k)</span>
+                    </div>
+                    <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">Pemula</span>
+                </div>
+                <button class="w-full mt-4 bg-white border border-primary text-primary font-medium py-2 rounded-lg hover:bg-primary hover:text-white transition-colors text-sm">Belajar Gratis</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="bg-gray-50 border-t border-gray-200 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+        <div>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center">
+                    <span class="w-2 h-6 bg-secondary rounded-sm mr-3"></span>
+                    Kelas Gratis RuangAI
+                </h2>
+                <a href="#" class="text-sm font-semibold text-primary hover:text-secondary transition">Lihat Semua →</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Generative AI untuk Pemula</h4>
+                        <p class="text-xs text-slate-500 mt-1">RuangAI • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.8 ★
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Prompt Engineering Basic</h4>
+                        <p class="text-xs text-slate-500 mt-1">RuangAI • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.7 ★
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">AI Tools untuk Produktivitas</h4>
+                        <p class="text-xs text-slate-500 mt-1">RuangAI • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.9 ★
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Machine Learning Concept</h4>
+                        <p class="text-xs text-slate-500 mt-1">RuangAI • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.6 ★
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center">
+                    <span class="w-2 h-6 bg-secondary rounded-sm mr-3"></span>
+                    Kelas Gratis JagoanSiber
+                </h2>
+                <a href="#" class="text-sm font-semibold text-primary hover:text-secondary transition">Lihat Semua →</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1563206767-5b1d97299337?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Ethical Hacking Intro</h4>
+                        <p class="text-xs text-slate-500 mt-1">JagoanSiber • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.8 ★
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Keamanan Jaringan Dasar</h4>
+                        <p class="text-xs text-slate-500 mt-1">JagoanSiber • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.7 ★
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Web Security Fundamentals</h4>
+                        <p class="text-xs text-slate-500 mt-1">JagoanSiber • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.9 ★
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-start space-x-3 hover:shadow-md transition cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=100&h=100&fit=crop" class="w-16 h-16 rounded object-cover flex-shrink-0">
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-800 line-clamp-2 leading-snug">Digital Forensics 101</h4>
+                        <p class="text-xs text-slate-500 mt-1">JagoanSiber • Course</p>
+                        <div class="flex items-center mt-1 text-xs font-bold text-yellow-500">
+                            4.5 ★
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="w-2 h-6 bg-primary rounded-sm mr-3"></span>
+                Mulai Berdasarkan Role
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div>
+                    <h3 class="font-bold text-slate-700 mb-4 border-b border-gray-200 pb-2">Frontend Developer</h3>
+                    <div class="space-y-4">
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-blue-100 rounded flex items-center justify-center text-blue-600 font-bold text-xs flex-shrink-0">HTML</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">HTML5 Dasar</h4>
+                                <p class="text-xs text-slate-500">Course • 4.8 ★</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-blue-100 rounded flex items-center justify-center text-blue-600 font-bold text-xs flex-shrink-0">CSS</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">CSS3 & Layouting</h4>
+                                <p class="text-xs text-slate-500">Course • 4.7 ★</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-yellow-100 rounded flex items-center justify-center text-yellow-600 font-bold text-xs flex-shrink-0">JS</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">Javascript DOM</h4>
+                                <p class="text-xs text-slate-500">Course • 4.9 ★</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-700 mb-4 border-b border-gray-200 pb-2">Backend Developer</h3>
+                    <div class="space-y-4">
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-indigo-100 rounded flex items-center justify-center text-indigo-600 font-bold text-xs flex-shrink-0">PHP</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">PHP Dasar</h4>
+                                <p class="text-xs text-slate-500">Course • 4.6 ★</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-green-100 rounded flex items-center justify-center text-green-600 font-bold text-xs flex-shrink-0">Node</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">NodeJS Intro</h4>
+                                <p class="text-xs text-slate-500">Course • 4.8 ★</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-red-100 rounded flex items-center justify-center text-red-600 font-bold text-xs flex-shrink-0">SQL</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">Database MySQL</h4>
+                                <p class="text-xs text-slate-500">Course • 4.9 ★</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-slate-700 mb-4 border-b border-gray-200 pb-2">Cyber Security</h3>
+                    <div class="space-y-4">
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-slate-200 rounded flex items-center justify-center text-slate-700 font-bold text-xs flex-shrink-0">NET</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">Jaringan Komputer</h4>
+                                <p class="text-xs text-slate-500">Course • 4.8 ★</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-slate-200 rounded flex items-center justify-center text-slate-700 font-bold text-xs flex-shrink-0">LNX</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">Linux Basic Command</h4>
+                                <p class="text-xs text-slate-500">Course • 4.7 ★</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 items-start group cursor-pointer">
+                            <div class="w-12 h-12 bg-slate-200 rounded flex items-center justify-center text-slate-700 font-bold text-xs flex-shrink-0">WEB</div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-800 group-hover:text-primary transition">OWASP Top 10</h4>
+                                <p class="text-xs text-slate-500">Course • 4.9 ★</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section class="bg-white py-16 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-slate-900 mb-2">Kenapa Mulai dari Gratis di Codepolitan?</h2>
+        <p class="text-slate-500 mb-12 max-w-2xl mx-auto">Karena skill bukan soal mahal. Tapi soal konsisten. Kami sediakan akses tanpa batas untuk langkah pertamamu.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Mentor Praktisi Industri</h3>
+                <p class="text-sm text-slate-600">Belajar langsung dari mereka yang bekerja di top tech companies, bukan sekadar teori akademik.</p>
+            </div>
+            <div class="p-6 rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-secondary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Materi Terstruktur</h3>
+                <p class="text-sm text-slate-600">Kurikulum disusun bertahap. Dari nol banget sampai paham konsep fundamental yang kuat.</p>
+            </div>
+            <div class="p-6 rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Pathway Karier Jelas</h3>
+                <p class="text-sm text-slate-600">Selesai materi gratis? Lanjut ke Bootcamp intensif untuk persiapan kerja profesional.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-primary py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Gratis Sekarang. Profesional Nanti.</h2>
+        <p class="text-white/90 text-lg mb-8">Ribuan learner sudah memulai perjalanan mereka dari sini. Sekarang giliran kamu membangun masa depan.</p>
+        <button class="bg-white text-primary font-bold px-8 py-3 rounded-lg text-lg hover:bg-gray-100 transition shadow-lg">
+            Daftar & Mulai Gratis
+        </button>
+    </div>
+</section>
+
+<footer class="bg-dark text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            <div class="col-span-2 md:col-span-1">
+                <span class="text-2xl font-bold tracking-tighter text-white">CODEPOLITAN</span>
+                <p class="mt-4 text-slate-400 text-sm leading-relaxed">Platform belajar coding bahasa Indonesia yang dikembangkan khusus untuk membantumu #JadiTalentaDigital.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-gray-200">Program</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">Kelas Online</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Bootcamp</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Alibaba Cloud</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Mulai Gratis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-gray-200">Komunitas</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">Event</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Forum</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Discord</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-gray-200">Perusahaan</h4>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Syarat Ketentuan</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-slate-500 text-sm">© 2024 Codepolitan. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-slate-400 hover:text-white"><span class="sr-only">Facebook</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg></a>
+                <a href="#" class="text-slate-400 hover:text-white"><span class="sr-only">Instagram</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 014.094 4.66c.636-.247 1.363-.416 2.427-.465C7.532 4.136 7.886 4.124 10.315 4.124h.63c2.43 0 2.784.013 3.808.06.54.025.923.102 1.196.208.37.143.633.312.879.557.245.246.414.509.557.88.106.273.183.655.208 1.196.047 1.024.06 1.379.06 3.808 0 2.43-.013 2.784-.06 3.808-.025.54-.102.923-.208 1.196-.143.37-.312.633-.557.879-.246.245-.509.414-.88.557-.273.106-.655.183-1.196.208-1.024.047-1.379.06-3.808.06-2.43 0-2.784-.013-3.808-.06-.54-.025-.923-.102-1.196-.208a2.388 2.388 0 01-.88-.557 2.388 2.388 0 01-.557-.88c-.106-.273-.183-.655-.208-1.196-.047-1.024-.06-1.379-.06-3.808s.013-2.784.06-3.808c.025-.54.102-.923.208-1.196.143-.37.312-.633.557-.879.245-.246.509-.414.88-.557.273-.106.655-.183 1.196-.208 1.024-.047 1.379-.06 3.808-.06h.63zm2.5 5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm-9 0a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm9 9a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm-9 0a2.5 2.5 0 100 5 2.5 2.5 0 000-5z" clip-rule="evenodd"/></svg></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
